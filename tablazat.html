@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <script src="tablazat.js" defer></script>
     <title>Menu</title>
 </head>
 <body>
@@ -22,8 +22,34 @@
         </ul>
     </nav>
     <div class="content">
-        <div class="div-content">asdf</div>
-        <aside>asdfg</aside>
+        <div class="content-div">
+            <h2>Felhasználók kezelése</h2>
+          
+            <input type="text" id="searchInput" placeholder="Keresés...">
+          
+            <form id="userForm">
+              <input type="text" id="name" placeholder="Név" required minlength="2" maxlength="20">
+              <input type="email" id="email" placeholder="Email" required>
+              <input type="text" id="city" placeholder="Város" required minlength="2" maxlength="20">
+              <input type="text" id="position" placeholder="Pozíció" required>
+              <button type="submit">Hozzáadás</button>
+            </form>
+          
+            <table id="userTable" border="1">
+              <thead>
+                <tr>
+                  <th onclick="sortTable(0)">Név</th>
+                  <th onclick="sortTable(1)">Email</th>
+                  <th onclick="sortTable(2)">Város</th>
+                  <th onclick="sortTable(3)">Pozíció</th>
+                  <th>Művelet</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          
+        <aside></aside>
     </div>
     <footer>Orbán Áron Gáspár L5ODX6</footer>
 </body>
