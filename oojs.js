@@ -74,6 +74,6 @@ class HTMLElementWrapper {
   
   // App elindítása
   document.addEventListener("DOMContentLoaded", () => {
-    new NoteApp(".div-content");
+    new NoteApp(".content-div");
   });
   

@@ -69,15 +69,11 @@ footer{
 
 .content .div-content{
     width: 75%;
-    background-color: rgb(255, 255, 255);
+    background-color: red;
     padding: 20px;
 }
 
 .content aside{
     width: 25%;
     background-color: darkolivegreen;
-}
-
-.activeRow{
-    background-color: burlywood;
 }
