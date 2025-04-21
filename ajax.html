@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.4/axios.js" integrity="sha512-GZ3tCTg/fmuBbcc3NlFeEjz2Uozw2dH39ePntzLUPMT+Y+6yvH6U2SY7SoLhFRlebuPWmwd+mafASkalUSNGoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <script src="ajax.js" defer></script>
     <title>Menu</title>
 </head>
 <body>
@@ -22,8 +23,41 @@
         </ul>
     </nav>
     <div class="content">
-        <div class="div-content">asdf</div>
-        <aside>asdfg</aside>
+        <div class="div-content">
+            <h2>AJAX CRUD példa – Axios</h2>
+
+    <!-- READ -->
+    <h3>Adatok lekérése (Read)</h3>
+    <button id="loadData">Adatok betöltése</button>
+    <div id="dataList"></div>
+    <div id="heightStats"></div>
+
+    <!-- CREATE -->
+    <h3>Új adat létrehozása (Create)</h3>
+    <input type="text" id="createName" placeholder="Név">
+    <input type="text" id="createWeight" placeholder="Súly">
+    <input type="text" id="createHeight" placeholder="Magasság">
+    <button id="createBtn">Létrehozás</button>
+    <p id="createMsg"></p>
+
+    <!-- UPDATE -->
+    <h3>Adat módosítása (Update)</h3>
+    <input type="text" id="updateId" placeholder="ID lekéréshez">
+    <button id="loadForUpdate">Adatok betöltése ID alapján</button><br>
+    <input type="text" id="updateName" placeholder="Név">
+    <input type="text" id="updateWeight" placeholder="Súly">
+    <input type="text" id="updateHeight" placeholder="Magasság">
+    <button id="updateBtn">Módosítás</button>
+    <p id="updateMsg"></p>
+
+    <!-- DELETE -->
+    <h3>Adat törlése (Delete)</h3>
+    <input type="text" id="deleteId" placeholder="Törlendő ID">
+    <button id="deleteBtn">Törlés</button>
+    <p id="deleteMsg"></p>
+    
+        </div>
+        <aside></aside>
     </div>
     <footer>Orbán Áron Gáspár L5ODX6</footer>
 </body>
